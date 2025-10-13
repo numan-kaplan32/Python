@@ -14,8 +14,9 @@ userBirthday = datetime.date(yearUser, monthUser, dayUser)
 today = datetime.date.today()
 age = today.year - userBirthday.year
 if (today.month, today.day) < (userBirthday.month, userBirthday.day):
-    age -= 1
-
-print(f"Doğum tarihiniz: {userBirthday.strftime('%d.%m.%Y')}")
-print(f"Bugünün tarihi: {today.strftime('%d.%m.%Y')}")
-print(f"Yaşınız: {age}")
+    print("Doğum tarihiniz şuanki tarihten büyük olamaz!!!")
+    
+else:
+    print(f"Doğum tarihiniz: {userBirthday.strftime('%d.%m.%Y')}")
+    print(f"Bugünün tarihi: {today.strftime('%d.%m.%Y')}")
+    print(f"Yaşınız: {age}")
