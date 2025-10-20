@@ -32,3 +32,4 @@ def calculate_score():
 
 calculate_score()
 
+
