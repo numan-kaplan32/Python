@@ -6,7 +6,7 @@ Created on Sun Oct 19 15:38:27 2025
 """
 import streamlit as st
 
-def calculate_grade():
+def calculate_score():
     st.title("Vize-Final Not Hesaplama")
 
     midterm1 = st.number_input("1. Vize Notunu Gir:")
@@ -30,4 +30,5 @@ def calculate_grade():
         else:
             st.error("Notlar 0 ile 100 arasında olmalıdır!")
 
-calculate_grade()
+calculate_score()
+
